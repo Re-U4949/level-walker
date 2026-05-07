@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="android"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_loading">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.pdjissen.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.pdjissen.ui.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.pdjissen.ui.quest.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/navigation_friend"
+        android:name="com.example.pdjissen.ui.friend.FriendFragment"
+        android:label="fragment_friend"
+        tools:layout="@layout/fragment_friend">
+
+        <action
+            android:id="@+id/action_friend_to_add"
+            app:destination="@id/navigation_friend_add" />
+
+        <action
+            android:id="@+id/action_friend_to_requests"
+            app:destination="@id/navigation_friend_request" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_ranking"
+        android:name="com.example.pdjissen.ui.ranking.RankingFragment"
+        android:label="fragment_ranking"
+        tools:layout="@layout/fragment_ranking" />
+
+    <fragment
+        android:id="@+id/navigation_loading"
+        android:name="com.example.pdjissen.ui.home.LoadingFragment"
+        android:label="LoadingFragment"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_loading_to_home"
+            app:destination="@id/navigation_home"
+            app:popUpTo="@id/navigation_loading"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_status"
+        android:name="com.example.pdjissen.ui.status.StatusFragment"
+        android:label="fragment_status"
+        tools:layout="@layout/fragment_status" />
+
+    <fragment
+        android:id="@+id/navigation_friend_add"
+        android:name="com.example.pdjissen.ui.friend.FriendAddFragment"
+        android:label="フレンドを追加"
+        tools:layout="@layout/fragment_friend_add" />
+
+    <fragment
+        android:id="@+id/navigation_friend_request"
+        android:name="com.example.pdjissen.ui.friend.FriendRequestFragment"
+        android:label="リクエスト一覧"
+        tools:layout="@layout/fragment_friend_request" />
+</navigation>

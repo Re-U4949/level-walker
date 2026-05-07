@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Level Walker</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="map_description">現在地と移動経路を表示する地図</string>
+</resources>

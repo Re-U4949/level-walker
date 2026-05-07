@@ -1,0 +1,26 @@
+# Android / Gradle ビルド成果物
+*.iml
+.gradle
+build/
+/captures
+.externalNativeBuild
+.cxx
+.kotlin/
+
+# IDE 設定
+/.idea/
+.DS_Store
+
+# ローカル設定ファイル（SDK パス、APIキー等）
+local.properties
+
+# Firebase
+google-services.json
+
+# 過去のツール調査の残骸
+license_report_raw.txt
+trivy-report.html
+
+# 作業メモ・AIコンテキスト（公開しない）
+CLAUDE.md
+PD.md

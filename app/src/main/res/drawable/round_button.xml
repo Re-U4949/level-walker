@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 押したとき -->
+    <item android:state_pressed="true">
+        <shape android:shape="oval">
+            <gradient
+                android:startColor="#1B5BF7"
+                android:endColor="#153EDC"
+                android:angle="270" />
+            <stroke android:width="3dp" android:color="#66FFFFFF" />
+        </shape>
+    </item>
+
+    <!-- 通常時 -->
+    <item>
+        <shape android:shape="oval">
+            <gradient
+                android:startColor="#2D74FF"
+                android:endColor="#0047FF"
+                android:angle="270" />
+            <stroke android:width="3dp" android:color="#99FFFFFF" />
+            <padding android:bottom="6dp" />
+        </shape>
+    </item>
+</selector>

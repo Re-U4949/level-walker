@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp"
+    android:background="?attr/selectableItemBackground">
+
+    <TextView
+        android:id="@+id/friendName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/friendLevel"
+        android:layout_marginEnd="8dp"
+        tools:text="デモ ユーザー名" />
+
+    <TextView
+        android:id="@+id/friendLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        android:textColor="@android:color/holo_purple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Lv. 15" />
+
+    <TextView
+        android:id="@+id/friendTotalSteps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/friendName"
+        tools:text="総歩数: 120,450 歩" />
+
+    <TextView
+        android:id="@+id/friendTotalDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@id/friendTotalSteps"
+        app:layout_constraintBaseline_toBaselineOf="@id/friendTotalSteps"
+        android:layout_marginStart="16dp"
+        tools:text="総距離: 120.4 km" />
+
+    <TextView
+        android:id="@+id/friendTodaySteps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/friendTotalSteps"
+        tools:text="今日歩数: 3,567 歩" />
+
+    <TextView
+        android:id="@+id/friendTodayDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@id/friendTodaySteps"
+        app:layout_constraintBaseline_toBaselineOf="@id/friendTodaySteps"
+        android:layout_marginStart="16dp"
+        tools:text="今日距離: 2.8 km" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

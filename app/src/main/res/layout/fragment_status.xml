@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.status.StatusFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- ユーザー名 -->
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ユーザー名"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp" />
+
+        <!-- オンライン状態 -->
+        <TextView
+            android:id="@+id/onlineStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#F44336"
+            android:layout_marginBottom="20dp" />
+
+        <!-- ステータスカード -->
+        <LinearLayout
+            android:id="@+id/statusCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:background="@android:color/white"
+            android:elevation="6dp"
+            android:layout_marginBottom="20dp">
+
+            <!-- 現在のレベル -->
+            <TextView
+                android:id="@+id/currentLevel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="レベル: 1"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="15dp" />
+
+            <!-- 今日の歩数 -->
+            <TextView
+                android:id="@+id/todaySteps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="今日の歩数: 0"
+                android:textSize="18sp"
+                android:layout_marginBottom="10dp" />
+
+            <!-- 今日の距離（m） -->
+            <TextView
+                android:id="@+id/todayDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="今日の距離: 0 m"
+                android:textSize="18sp"
+                android:layout_marginBottom="10dp" />
+
+            <!-- 総歩数 -->
+            <TextView
+                android:id="@+id/totalSteps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="総歩数: 0"
+                android:textSize="18sp"
+                android:layout_marginBottom="10dp" />
+
+            <!-- 総距離（m） -->
+            <TextView
+                android:id="@+id/totalDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="総距離: 0 m"
+                android:textSize="18sp"
+                android:layout_marginBottom="10dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

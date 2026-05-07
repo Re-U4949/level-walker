@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/item_background"> <TextView
+    android:id="@+id/text_quest_title"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="18sp"
+    android:textStyle="bold"
+    android:textColor="@android:color/black"
+    tools:text="ログインボーナス" /> <TextView
+    android:id="@+id/text_quest_description"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:textSize="14sp"
+    tools:text="1日1回ログインする" /> <TextView
+    android:id="@+id/text_quest_reward"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:textSize="16sp"
+    android:textStyle="bold"
+    android:textColor="@color/purple_700"
+    tools:text="報酬: 10 ポイント" /> </LinearLayout>
