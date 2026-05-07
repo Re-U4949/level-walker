@@ -56,12 +56,12 @@
 
 ```mermaid
 flowchart LR
-    Frag[画面 (Fragment)<br/>Home / Dashboard / Status / Friend / Ranking / Quest]
-    VM[共有 ViewModel<br/>UserStatusViewModel ほか]
-    Repo[UserDataRepository<br/>Firebase との窓口]
-    Dev[歩数計 / GPS / 地図<br/>各 Manager クラス]
-    FB[(Firebase<br/>認証 + Firestore)]
-    DAPI[Directions API]
+    Frag["画面 (Fragment)<br/>Home / Dashboard / Status / Friend / Ranking / Quest"]
+    VM["共有 ViewModel<br/>UserStatusViewModel ほか"]
+    Repo["UserDataRepository<br/>Firebase との窓口"]
+    Dev["歩数計 / GPS / 地図<br/>各 Manager クラス"]
+    FB[("Firebase<br/>認証 + Firestore")]
+    DAPI["Directions API"]
 
     Frag --> VM
     Frag -. Dashboard のみ .-> Dev
