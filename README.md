@@ -12,7 +12,7 @@
 
 | Home | Map（経路表示） | Status | Friend |
 |:---:|:---:|:---:|:---:|
-| ![Home](docs/screenshots/home.png) | ![Map](docs/screenshots/map.png) | ![Status](docs/screenshots/status.png) | ![Friend](docs/screenshots/friend.png) |
+| ![Home](docs/screenshots/home.jpg) | ![Map](docs/screenshots/map.png) | ![Status](docs/screenshots/status.jpg) | ![Friend](docs/screenshots/friend.jpg) |
 
 ---
 
