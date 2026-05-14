@@ -12,7 +12,7 @@
 
 | Home | Map（経路表示） | Status | Friend |
 |:---:|:---:|:---:|:---:|
-| _画像_ | _画像_ | _画像_ | _画像_ |
+| ![Home](docs/screenshots/home.png) | ![Map](docs/screenshots/map.png) | ![Status](docs/screenshots/status.png) | ![Friend](docs/screenshots/friend.png) |
 
 ---
 
@@ -26,13 +26,13 @@
 
 ## 技術スタック
 
-| 種別 | 採用技術 |
-|---|---|
-| 言語 / SDK | Kotlin / minSdk 24, targetSdk 34 |
-| 設計 | MVVM + Repository パターン |
+| 種別         | 採用技術                                                 |
+| ------------ | -------------------------------------------------------- |
+| 言語 / SDK   | Kotlin / minSdk 24, targetSdk 34                         |
+| 設計         | MVVM + Repository パターン                               |
 | バックエンド | Firebase Authentication（匿名ログイン）, Cloud Firestore |
-| 地図 | Google Maps SDK, Directions API, Maps Utils |
-| センサー | Step Counter, FusedLocationProvider |
+| 地図         | Google Maps SDK, Directions API, Maps Utils              |
+| センサー     | Step Counter, FusedLocationProvider                      |
 
 ---
 
@@ -81,15 +81,18 @@ flowchart LR
 ## 自分の担当範囲
 
 **設計・データ層**
+
 - Firebase プロジェクトの構築（認証・Firestore のデータ設計・ルール調整）
 - `UserDataRepository`：Firebase との通信を一本化したクラス
 - 共有 ViewModel：歩数・レベル・距離・名前を画面間で共有する仕組み
 - 起動時に認証完了を待つ `LoadingFragment`（待たないとクラッシュした）
 
 **画面**
+
 - Home / Dashboard（地図＋計測） / Status
 
 **運用**
+
 - 1ファイルに詰まっていた処理を、機能ごとのクラスに分割するリファクタリング
 - ファイル構造・命名規則・担当分離を整理して、チームチャットで都度共有（後述）
 - ブランチ運用とコンフリクト解消のとりまとめ役
